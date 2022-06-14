@@ -15,6 +15,8 @@
   })
 
   cw1.addEventListener("click", function () {
+    const myInsertText = '<h1>Ladowanie...</h1>';
+    answer.innerHTML = myInsertText;
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(function (dane) {
